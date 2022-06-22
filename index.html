@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- UIkit CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="uk-background-primary uk-section width-1-1 height-1-1" uk-height-viewport="min-height: 100">
+      <h1 class="uk-text-center uk-text-bold uk-padding-small">Calculator</h1>
+      <div class="uk-flex uk-flex-center uk-flex-middle uk-padding-small">
+        <table class="">
+            <tr class="uk-background-secondary">
+                <td colspan="4"><input id="show" type="text" class="uk-width-1-1 uk-padding-small uk-text-right uk-text-primary uk-background-secondary uk-text-large" disabled /></td>
+            </tr>
+            <tr class="uk-background-secondary">
+                <!-- <td></td> -->
+                <td colspan="2"><a onclick="handleClick('clear')" class="btn uk-flex uk-flex-center uk-flex-middle">C</a></td>
+                <td colspan="2"><a onclick="handleClick('delete')" class="btn uk-flex uk-flex-center uk-flex-middle">DEL</a></td>
+            </tr>
+            <tr>
+                <td><a onclick="handleClick('7')" class="btn uk-flex uk-flex-center uk-flex-middle">7</a></td>
+                <td><a onclick="handleClick('8')" class="btn uk-flex uk-flex-center uk-flex-middle">8</a></td>
+                <td><a onclick="handleClick('9')" class="btn uk-flex uk-flex-center uk-flex-middle">9</a></td>
+                <td><a onclick="handleClick('/')" class="btn uk-flex uk-flex-center uk-flex-middle">÷</a></td>
+            </tr>
+            <tr>
+                <td><a onclick="handleClick('4')" class="btn uk-flex uk-flex-center uk-flex-middle">4</a></td>
+                <td><a onclick="handleClick('5')" class="btn uk-flex uk-flex-center uk-flex-middle">5</a></td>
+                <td><a onclick="handleClick('6')" class="btn uk-flex uk-flex-center uk-flex-middle">6</a></td>
+                <td><a onclick="handleClick('*')" class="btn uk-flex uk-flex-center uk-flex-middle">x</a></td>
+            </tr>
+            <tr>
+                <td><a onclick="handleClick('1')" class="btn uk-flex uk-flex-center uk-flex-middle">1</a></td>
+                <td><a onclick="handleClick('2')" class="btn uk-flex uk-flex-center uk-flex-middle">2</a></td>
+                <td><a onclick="handleClick('3')" class="btn uk-flex uk-flex-center uk-flex-middle">3</a></td>
+                <td><a onclick="handleClick('-')" class="btn uk-flex uk-flex-center uk-flex-middle">-</a></td>
+            </tr>
+            <tr>
+                <td><a onclick="handleClick('0')" class="btn uk-flex uk-flex-center uk-flex-middle">0</a></td>
+                <td><a onclick="handleClick('.')" class="btn uk-flex uk-flex-center uk-flex-middle">.</a></td>
+                <td><a onclick="handleSubmit()" class="btn submit uk-flex uk-flex-center uk-flex-middle">=</a></td>
+                <td><a onclick="handleClick('+')" class="btn uk-flex uk-flex-center uk-flex-middle">+</a></td>
+            </tr>
+        </table>
+      </div>
+    </section>
+  </body>
+  <script src="./main.js"></script>
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
+</html>
